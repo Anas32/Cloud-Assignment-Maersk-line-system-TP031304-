@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.master.cs" Inherits="CloudDDAC.Master_Pages.Customer" %>
+
+<!DOCTYPE html>
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Breadth 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140331
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="../Styles/CSS/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../Styles/CSS/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../Styles/CSS/sheet.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!-- 
+To collect end-user usage analytics about your application, 
+insert the following script into each page you want to track.
+Place this code immediately before the closing </head> tag,
+and before any other scripts. Your first data will appear 
+automatically in just a few seconds.
+-->
+<script type="text/javascript">
+  var appInsights=window.appInsights||function(config){
+    function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
+    }({
+        instrumentationKey:"2def0dea-3c94-42e9-b42c-48cf73ebaafc"
+    });
+       
+    window.appInsights=appInsights;
+    appInsights.trackPageView();
+</script>
+</head>
+<body>
+<div id="header-wrapper">
+  <div id="header" class="container">
+    <div id="logo">
+      <h1>Maersk Line</h1>
+</div>
+    <div id="menu">
+      <ul>
+        <li class="current_page_item"><a href="../Pages/MainCustomer.aspx" accesskey="1" title=""> <span class="glyphicon glyphicon-home"style="font-size:18px;color:red"></span>Home</a></li>
+        <li><a href="../Pages/TrackShipment.aspx" accesskey="2" title=""><span class="glyphicon glyphicon-globe" style="font-size:18px;color:red"></span>Keep-Track Shipment-Status</a></li>
+        <li><a href="http://www.maersk.com/en" accesskey="3" title=""><i class="fa fa-link" style="font-size:18px;color:red"></i>About Us</a></li>
+        <li><a href="../Pages/Logout.aspx" accesskey="4" title=""><span class="glyphicon glyphicon-off" style="font-size:18px;color:red"></span>Log out</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+<div id="copyright" class="container">
+  <p>&copy; All rights reserved. | Maersk Line:<a href="http://www.maersk.com/">Maersk Shipping and Co.</a> | Design by <a href="http://templated.co">TEMPLATED</a>.</p>
+</div>
+</body>
+</html>

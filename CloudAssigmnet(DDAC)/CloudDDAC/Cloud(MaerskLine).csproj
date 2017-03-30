@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C57B27E9-4AC3-4C5D-AB20-78DB8F379392}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CloudDDAC</RootNamespace>
+    <AssemblyName>CloudDDAC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <ApplicationInsightsResourceId>/subscriptions/1abfe842-932c-4e69-81ea-c3c9f356be36/resourcegroups/DDACASSIGMNT/providers/microsoft.insights/components/AnosiMaerskline</ApplicationInsightsResourceId>
+    <UseGlobalApplicationHostFile />
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/1abfe842-932c-4e69-81ea-c3c9f356be36/resourceGroups/DDACASSIGMNT/providers/microsoft.insights/components/AnosiMaerskline</ApplicationInsightsAnnotationResourceId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.TraceListener, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.TraceListener.2.2.0\lib\net45\Microsoft.ApplicationInsights.TraceListener.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\34.jpg" />
+    <Content Include="Images\44.jpg" />
+    <Content Include="Images\agent1.jpg" />
+    <Content Include="Images\agent22.jpg" />
+    <Content Include="Images\aggent3.jpg" />
+    <Content Include="Images\bb.jpg" />
+    <Content Include="Images\bblack.JPG" />
+    <Content Include="Images\callout.jpg" />
+    <Content Include="Images\clk2.png" />
+    <Content Include="Images\colorful.jpg" />
+    <Content Include="Images\custm1.jpg" />
+    <Content Include="Images\custm2.jpg" />
+    <Content Include="Images\custm3.jpg" />
+    <Content Include="Images\custom4.jpg" />
+    <Content Include="Images\header.jpg" />
+    <Content Include="Images\image002.jpg" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Images\loginpic.png" />
+    <Content Include="Images\maersjk line.JPG" />
+    <Content Include="Images\Maersk-Cargo-2.jpg" />
+    <Content Include="Images\office22.jpg" />
+    <Content Include="Images\pic11.png" />
+    <Content Include="Images\rrr.jpg" />
+    <Content Include="Images\staff44.jpg" />
+    <Content Include="Images\stff32.png" />
+    <Content Include="Images\stff33.jpg" />
+    <Content Include="Images\tableoffic2.jpg" />
+    <Content Include="Images\tableofic1.jpg" />
+    <Content Include="Images\teamwork.jpg" />
+    <Content Include="Images\ttt.jpg" />
+    <Content Include="Images\wkrs.jpg" />
+    <Content Include="Images\wkrs2.jpg" />
+    <Content Include="Images\worker.PNG" />
+    <Content Include="Pages\CreateCustomerProfile.aspx" />
+    <Content Include="Pages\LoginMain.aspx" />
+    <Content Include="Pages\Logout.aspx" />
+    <Content Include="Pages\MainAdmin.aspx" />
+    <Content Include="Pages\MainCustomer.aspx" />
+    <Content Include="Pages\MainPartner.aspx" />
+    <Content Include="Pages\MakeOrder.aspx" />
+    <Content Include="Pages\ManageSchedule.aspx" />
+    <Content Include="Pages\DeActivateCustomerProfile.aspx" />
+    <Content Include="Pages\EditCustomerProfile.aspx" />
+    <Content Include="Pages\ManageFleet.aspx" />
+    <Content Include="Pages\Manshipment.aspx" />
+    <Content Include="Pages\SetupCosting.aspx" />
+    <Content Include="Pages\TrackShipment.aspx" />
+    <Content Include="Pages\TrackShipmentMan.aspx" />
+    <Content Include="Pages\TrackShipmentPart.aspx" />
+    <Content Include="Pages\UpdateShipmentStatus.aspx" />
+    <Content Include="scripts\ai.1.0.0-build00159.js" />
+    <Content Include="scripts\ai.1.0.0-build00159.min.js" />
+    <Content Include="Styles\CSS\.DS_Store" />
+    <Content Include="Styles\CSS\bootstrap-theme.css.map" />
+    <Content Include="Styles\CSS\bootstrap-theme.min.css.map" />
+    <Content Include="Styles\CSS\bootstrap.css.map" />
+    <Content Include="Styles\CSS\bootstrap.min.css.map" />
+    <Content Include="Styles\CSS\style.css" />
+    <Content Include="Styles\fonts\fontawesome-webfont.eot" />
+    <Content Include="Styles\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Styles\fonts\fontawesome-webfont.woff" />
+    <Content Include="Styles\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Styles\fonts\FontAwesome.otf" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Styles\img\.DS_Store" />
+    <Content Include="Styles\img\v2\.DS_Store" />
+    <Content Include="Styles\js\.DS_Store" />
+    <Content Include="Styles\js\vendor\.DS_Store" />
+    <Content Include="Master Pages\MainSet.Master" />
+    <Content Include="Master Pages\Partner.Master" />
+    <Content Include="Master Pages\Customer.Master" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\PublishProfiles\AnosiMaerskline - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\NorthEuropeMaerskline - Web Deploy.pubxml" />
+    <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <None Include="Properties\PublishProfiles\practisejjjj - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\container-ship-1-courtesy-of-shipsofthemersey-me-uk.jpg" />
+    <Content Include="Images\dock.jpg" />
+    <Content Include="Pages\Welcome.aspx" />
+    <Content Include="Styles\CSS\about.css" />
+    <Content Include="Styles\CSS\bootstrap-theme.css" />
+    <Content Include="Styles\CSS\bootstrap-theme.min.css" />
+    <Content Include="Styles\CSS\bootstrap.css" />
+    <Content Include="Styles\CSS\bootstrap.min.css" />
+    <Content Include="Styles\CSS\custom.css" />
+    <Content Include="Styles\CSS\font-awesome.css" />
+    <Content Include="Styles\CSS\font-awesome.min.css" />
+    <Content Include="Styles\CSS\grid.css" />
+    <Content Include="Styles\CSS\ie.css" />
+    <Content Include="Styles\CSS\jquery-ui.css" />
+    <Content Include="Styles\CSS\main.css" />
+    <Content Include="Styles\CSS\modal.css" />
+    <Content Include="Styles\CSS\normalize.css" />
+    <Content Include="Styles\CSS\owl.carousel.css" />
+    <Content Include="Styles\CSS\sheet.css" />
+    <Content Include="Styles\CSS\sheet2.css" />
+    <Content Include="Styles\CSS\sheet3.css" />
+    <Content Include="Styles\CSS\style2.css" />
+    <Content Include="Styles\CSS\StyleSheet.css" />
+    <Content Include="Styles\CSS\default.css" />
+    <Content Include="Styles\CSS\fonts.css" />
+    <Content Include="Styles\fonts\fontawesome-webfont.svg" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Styles\img\ceo.jpg" />
+    <Content Include="Styles\img\frame-1.jpg" />
+    <Content Include="Styles\img\hero.jpg" />
+    <Content Include="Styles\img\slide-1.jpg" />
+    <Content Include="Styles\img\slide-2.jpg" />
+    <Content Include="Styles\img\slide-3.jpg" />
+    <Content Include="Styles\img\v2\iphone-bg-lg.min.png" />
+    <Content Include="Styles\img\v2\iphone6.min.png" />
+    <Content Include="Styles\js\bootstrap.js" />
+    <Content Include="Styles\js\bootstrap.min.js" />
+    <Content Include="Styles\js\dropdown.js" />
+    <Content Include="Styles\js\jquery-1.3.2.min.js" />
+    <Content Include="Styles\js\jquery-ui.js" />
+    <Content Include="Styles\js\jquery.backstretch.js" />
+    <Content Include="Styles\js\jquery.js" />
+    <Content Include="Styles\js\jquery.min.js" />
+    <Content Include="Styles\js\jquery.validate.js" />
+    <Content Include="Styles\js\main.js" />
+    <Content Include="Styles\js\npm.js" />
+    <Content Include="Styles\js\vendor\modernizr.js" />
+    <Content Include="Styles\js\vendor\owl.carousel.min.js" />
+    <Content Include="Styles\js\vendor\respond.min.js" />
+    <Content Include="Styles\CSS\stylish-portfolio.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\Admin.cs" />
+    <Compile Include="App_Code\Customer.cs" />
+    <Compile Include="Master Pages\Customer.Master.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master Pages\Customer.Master.designer.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master Pages\MainSet.Master.cs">
+      <DependentUpon>MainSet.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master Pages\MainSet.Master.designer.cs">
+      <DependentUpon>MainSet.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master Pages\Partner.Master.cs">
+      <DependentUpon>Partner.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master Pages\Partner.Master.designer.cs">
+      <DependentUpon>Partner.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CreateCustomerProfile.aspx.cs">
+      <DependentUpon>CreateCustomerProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CreateCustomerProfile.aspx.designer.cs">
+      <DependentUpon>CreateCustomerProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoginMain.aspx.cs">
+      <DependentUpon>LoginMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoginMain.aspx.designer.cs">
+      <DependentUpon>LoginMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainAdmin.aspx.cs">
+      <DependentUpon>MainAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MainAdmin.aspx.designer.cs">
+      <DependentUpon>MainAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainCustomer.aspx.cs">
+      <DependentUpon>MainCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MainCustomer.aspx.designer.cs">
+      <DependentUpon>MainCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainPartner.aspx.cs">
+      <DependentUpon>MainPartner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MainPartner.aspx.designer.cs">
+      <DependentUpon>MainPartner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MakeOrder.aspx.cs">
+      <DependentUpon>MakeOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MakeOrder.aspx.designer.cs">
+      <DependentUpon>MakeOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ManageSchedule.aspx.cs">
+      <DependentUpon>ManageSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ManageSchedule.aspx.designer.cs">
+      <DependentUpon>ManageSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DeActivateCustomerProfile.aspx.cs">
+      <DependentUpon>DeActivateCustomerProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DeActivateCustomerProfile.aspx.designer.cs">
+      <DependentUpon>DeActivateCustomerProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditCustomerProfile.aspx.cs">
+      <DependentUpon>EditCustomerProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EditCustomerProfile.aspx.designer.cs">
+      <DependentUpon>EditCustomerProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ManageFleet.aspx.cs">
+      <DependentUpon>ManageFleet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ManageFleet.aspx.designer.cs">
+      <DependentUpon>ManageFleet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Manshipment.aspx.cs">
+      <DependentUpon>Manshipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Manshipment.aspx.designer.cs">
+      <DependentUpon>Manshipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SetupCosting.aspx.cs">
+      <DependentUpon>SetupCosting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SetupCosting.aspx.designer.cs">
+      <DependentUpon>SetupCosting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TrackShipment.aspx.cs">
+      <DependentUpon>TrackShipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TrackShipment.aspx.designer.cs">
+      <DependentUpon>TrackShipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TrackShipmentMan.aspx.cs">
+      <DependentUpon>TrackShipmentMan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TrackShipmentMan.aspx.designer.cs">
+      <DependentUpon>TrackShipmentMan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TrackShipmentPart.aspx.cs">
+      <DependentUpon>TrackShipmentPart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TrackShipmentPart.aspx.designer.cs">
+      <DependentUpon>TrackShipmentPart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UpdateShipmentStatus.aspx.cs">
+      <DependentUpon>UpdateShipmentStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UpdateShipmentStatus.aspx.designer.cs">
+      <DependentUpon>UpdateShipmentStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Partner.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App_Code\Users.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27323</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:27323/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

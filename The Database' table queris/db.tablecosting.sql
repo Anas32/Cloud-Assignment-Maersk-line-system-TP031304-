@@ -1,0 +1,29 @@
+USE [MaersklineDatabase]
+GO
+
+/****** Object:  Table [dbo].[CostingTable]    Script Date: 3/14/2017 4:21:35 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[CostingTable](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Ship_Type] [varchar](50) NOT NULL,
+	[Cost] [varchar](30) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

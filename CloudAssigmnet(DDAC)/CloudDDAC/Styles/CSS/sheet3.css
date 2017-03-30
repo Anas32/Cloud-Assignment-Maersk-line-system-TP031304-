@@ -1,0 +1,579 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+body {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../../Images/custm3.jpg') no-repeat fixed center center;
+    -webkit-background-size: cover;
+   
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar-default
+{
+    border-radius:0px;
+}
+.navbar-default {
+    font-size: 14px;  
+    border-width: 1px;
+    border-radius: 0px;
+    background: #333;
+	background: rgba(51, 51, 51, 0.1);
+	border: 0;
+	-o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+.navbar-default .navbar-nav > li > a
+{
+    background-color: rgba(248, 248, 248, 0);
+    color: #FFFFFF;
+}
+ .navbar-nav > li > a:hover, #custom-bootstrap-menu.navbar-default .navbar-nav > li > a:focus
+{
+    color: rgb(255, 153, 102);
+    background-color: rgba(248, 248, 248, 0);
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+    color: rgb(255, 153, 153);
+    background-color: rgba(231, 231, 231, 1);
+}
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #888;
+}
+
+
+#banner
+{
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../Images/custm3.JPG) no-repeat scroll center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding: 120px 0 90px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#banner h1
+{
+    color: darkblue;
+    font-family: "Open Sans" , "Helvetica Neue" ,Helvetica,Arial,sans-serif;
+    font-weight: lighter;
+    font-size: 33px;
+    word-spacing: 5px;
+    line-height: 1.5em;
+}
+#banner h5
+{
+    margin: 10px 0px 0px 0px;
+    color: #000;
+   
+    font-weight: lighter;
+    padding-top: 50px;
+}
+
+
+img
+{
+    background: #333;
+	background: rgba(51, 51, 51, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+.form-horizontal
+{
+    margin: 0;
+    outline: none;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    font: 13px/1.55 'Open Sans' , Helvetica, Arial, sans-serif;
+    color: #666;
+    background-color: #f7ecee; 
+    
+}
+.form-horizontal * {
+	margin: 0;
+	padding: 0;
+}
+.form-horizontal header
+{
+    /* display: block;*/
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../../Images/custm3.jpg') no-repeat scroll center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding: 20px 30px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #FFFFFF;
+    vertical-align: middle;
+}
+.form-horizontal fieldset
+{
+    display: block;
+    padding: 25px 30px 5px;
+    border: none;
+    background-color: #FFDDD5;
+}
+.form-horizontal fieldset + fieldset {
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+.form-horizontal section {
+	margin-bottom: 20px;
+}
+.form-horizontal footer
+{
+    display: block;
+    padding: 15px 30px 25px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    background: rgba(248,248,248,.9);
+    background-color: #E8E8E8;
+}
+.form-horizontal footer:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.form-horizontal a {
+	color: #2da5da;
+}
+.form-horizontal .label
+{
+    display: block;
+    margin-bottom: 6px;
+    line-height: 19px;
+    text-align: left;
+    color: #000000;
+    
+    font-weight: normal;
+      font: 14px/1.55 'Open Sans' , Helvetica, Arial, sans-serif;
+}
+.form-horizontal .label.col {
+	margin: 0;
+	padding-top: 10px;
+}
+.form-horizontal .note
+{
+    margin-top: 6px;
+    padding: 0 1px;
+    font-size: 11px;
+    line-height: 15px;
+    color: #999999;
+}
+.form-horizontal .input,
+.form-horizontal .select,
+.form-horizontal .textarea,
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .toggle,
+.form-horizontal .button {
+	position: relative;
+	display: block;
+}
+.form-horizontal .input input, .form-horizontal .select select, .form-horizontal .textarea textarea
+{
+    border: 1px solid #FF3300;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    outline: none;
+    border-radius: 0;
+ 
+    font: 13px/16px 'Open Sans' , Helvetica, Arial, sans-serif;
+    color: #404040;
+    appearance: normal;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+
+/**/
+/* file inputs */
+/**/
+.form-horizontal .input-file .button
+{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    float: none;
+    height: 31px;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 13px;
+    line-height: 31px;
+}
+.form-horizontal .input-file .button:hover {
+	box-shadow: none;
+}
+.form-horizontal .input-file .button input
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+/**/
+/* selects */
+/**/
+.form-horizontal .select i
+{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 5px;
+    height: 11px;
+    background: #fff;
+    box-shadow: 0 0 0 12px #fff;
+}
+.form-horizontal .select i:after,
+.form-horizontal .select i:before {
+	content: '';
+	position: absolute;
+	right: 0;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+}
+.form-horizontal .select i:after
+{
+    bottom: 0;
+    border-top: 1px solid #8787AF;
+    border-top-color: #8787AF;
+}
+.form-horizontal .select i:before
+{
+    top: 0;
+    border-bottom: 1px solid #8787AF;
+}
+.form-horizontal .select-multiple select {
+	height: auto;
+}
+
+
+/**/
+/* textareas */
+/**/
+.form-horizontal .textarea textarea {
+	height: auto;
+	resize: none;
+}
+.form-horizontal .textarea-resizable textarea {
+	resize: vertical;	
+}
+.form-horizontal .textarea-expandable textarea {
+	height: 39px;
+}
+.form-horizontal .textarea-expandable textarea:focus {
+	height: auto;
+}
+
+
+/**/
+/* radios and checkboxes */
+/**/
+.form-horizontal .radio, .form-horizontal .checkbox
+{
+    margin-bottom: 4px;
+    padding-left: 27px;
+    font-size: 13px;
+    line-height: 27px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: normal;
+}
+.form-horizontal .radio:last-child,
+.form-horizontal .checkbox:last-child {
+	margin-bottom: 0;
+}
+.form-horizontal .radio input,
+.form-horizontal .checkbox input {
+	position: absolute;
+	left: -9999px;
+}
+.form-horizontal .radio i,
+.form-horizontal .checkbox i {
+	position: absolute;
+	top: 13px;
+	left: 0;
+	display: block;
+	width: 13px;
+	height: 13px;
+	outline: none;
+	border-width: 1px;
+	border-style: solid;
+	background: #fff;
+}
+.form-horizontal .radio i {
+	border-radius: 50%;
+}
+.form-horizontal .radio input + i:after,
+.form-horizontal .checkbox input + i:after {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s;
+	-o-transition: opacity 0.1s;
+	-ms-transition: opacity 0.1s;
+	-moz-transition: opacity 0.1s;
+	-webkit-transition: opacity 0.1s;
+}
+.form-horizontal .radio input + i:after
+{
+    content: '';
+    top: 3px;
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+.form-horizontal .checkbox input + i:after {
+	content: '\f00c';
+	top: -3px;
+	left: -1px;
+	width: 15px;
+	height: 15px;
+	font: normal 12px/16px FontAwesome;
+	text-align: center;
+}
+.form-horizontal .radio input:checked + i:after,
+.form-horizontal .checkbox input:checked + i:after {
+	opacity: 1;
+}
+.form-horizontal .inline-group {
+	margin: 0 -30px -4px 0;
+}
+.form-horizontal .inline-group:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.form-horizontal .inline-group .radio,
+.form-horizontal .inline-group .checkbox {
+	float: left;
+	margin-right: 15px;
+}
+.form-horizontal .inline-group .radio:last-child,
+.form-horizontal .inline-group .checkbox:last-child {
+	margin-bottom: 4px;
+}
+
+
+/**/
+/* toggles */
+/**/
+.form-horizontal .toggle
+{
+    margin-bottom: 4px;
+    padding-right: 61px;
+    font-size: 15px;
+    line-height: 27px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+.form-horizontal .toggle:last-child {
+	margin-bottom: 0;
+}
+.form-horizontal .toggle input {
+	position: absolute;
+	left: -9999px;
+}
+.form-horizontal .toggle i
+{
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 0;
+    display: block;
+    width: 49px;
+    height: 17px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 12px;
+    background: #fff;
+}
+.form-horizontal .toggle i:after {
+	content: 'OFF';
+	position: absolute;
+	top: 2px;
+	right: 8px;
+	left: 8px;
+	font-style: normal;
+	font-size: 9px;
+	line-height: 13px;
+	font-weight: 700;
+	text-align: left;
+	color: #5f5f5f;
+}
+.form-horizontal .toggle i:before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 3px;
+	right: 4px;
+	display: block;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	opacity: 1;
+	transition: right 0.2s;
+	-o-transition: right 0.2s;
+	-ms-transition: right 0.2s;
+	-moz-transition: right 0.2s;
+	-webkit-transition: right 0.2s;
+}
+.form-horizontal .toggle input:checked + i:after {
+	content: 'ON';
+	text-align: right;
+}
+.form-horizontal .toggle input:checked + i:before {
+	right: 36px;
+}
+
+
+/**/
+/* ratings */
+/**/
+.form-horizontal .rating {
+	margin-bottom: 4px;
+	font-size: 15px;
+	line-height: 27px;
+	color: #404040;
+}
+.form-horizontal .rating:last-child {
+	margin-bottom: 0;
+}
+.form-horizontal .rating input {
+	position: absolute;
+	left: -9999px;
+}
+.form-horizontal .rating label {
+	display: block;
+	float: right;
+	height: 17px;
+	margin-top: 5px;
+	padding: 0 2px;
+	font-size: 17px;
+	line-height: 17px;
+	cursor: pointer;
+}
+
+
+/**/
+/* buttons */
+/**/
+.form-horizontal .button
+{
+    float: right;
+    height: 39px;
+    overflow: hidden;
+    margin: 10px 0 0 20px;
+    padding: 0 25px;
+    outline: none;
+    border: 0;
+    font: 300 15px/39px 'Open Sans' , Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+/*------------ input & check box ---------------*/
+/**/
+/* normal state */
+/**/
+.form-horizontal .toggle i:before {
+	background-color: #cc3d3d;	
+}
+.form-horizontal .button
+{
+    background-color: #CC3300;
+    border-radius: 4px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(186,186,186,1);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(186,186,186,1);
+    box-shadow: 1px 1px 5px 0px rgba(186,186,186,1);
+    font-weight: bold;
+}
+
+
+/**/
+/* hover state */
+/**/
+.form-horizontal .input:hover input, .form-horizontal .select:hover select, .form-horizontal .textarea:hover textarea, .form-horizontal .radio:hover i, .form-horizontal .checkbox:hover i, .form-horizontal .toggle:hover i
+{
+    border-color: #404080;
+}
+.form-horizontal .rating input + label:hover, .form-horizontal .rating input + label:hover label
+{
+    color: #3E3E7D;
+}
+
+
+/**/
+/* focus state */
+/**/
+.form-horizontal .input input:focus, .form-horizontal .select select:focus, .form-horizontal .textarea textarea:focus, .form-horizontal .radio input:focus + i, .form-horizontal .checkbox input:focus + i, .form-horizontal .toggle input:focus + i
+{
+    border-color: #cc3d3d;
+  
+}
+
+
+/**/
+/* checked state */
+/**/
+.form-horizontal .radio input + i:after {
+	background-color: #cc3d3d;	
+}
+.form-horizontal .checkbox input + i:after {
+	color: #cc3d3d;
+}
+.form-horizontal .radio input:checked + i,
+.form-horizontal .checkbox input:checked + i,
+.form-horizontal .toggle input:checked + i {
+	border-color: #cc3d3d;	
+}
+.form-horizontal .rating input:checked ~ label {
+	color: #cc3d3d;	
+}
+

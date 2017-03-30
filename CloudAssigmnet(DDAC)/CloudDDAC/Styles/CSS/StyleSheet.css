@@ -1,0 +1,235 @@
+﻿*{
+    padding:0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0px;
+}
+
+html,body/*hide the scroll options*/
+{ 
+    overflow:auto; 
+}
+
+body 
+{
+     font-family:Calibri,sans-serif;
+    background-color:rgba(0,0,0,0.7);
+        
+}
+
+.topheader
+{
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:300;
+    margin:40px auto;
+    letter-spacing:3px;
+    color:#aaa;
+    width:100%;
+    text-shadow:1px 1px 0 rgba(0,0,0,.2);
+}
+
+.background-wrap
+{
+    position:fixed;
+    z-index:-1000;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    top:0;
+    left:0;
+}
+
+.init-content
+{
+    text-align:center;
+    font-size:65px;
+    text-transform:uppercase;
+    font-weight:300;
+    color:white;
+    padding-top:15%;
+    margin-bottom:10px;
+
+}
+
+.init-content p
+{
+    text-align:center;
+    font-size:20px;
+    letter-spacing:3px;
+    color:#aaa;
+}
+
+.init-content/* Set BG Color*/
+{
+    position:absolute;
+    width:100%;
+    min-height:100%;
+    z-index:1000;
+    top: 111px;
+    left: -2px;
+}
+
+#hyper
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    position:absolute;
+    background-color:darkcyan; 
+    color:white;
+    display:inline-block;
+    text-decoration:solid;
+    padding:10px 10px;
+    display:inline-block;
+    border-radius:3px;
+    letter-spacing:2px;
+    left:473px;
+    top: 485px;
+    width: 395px;
+       
+}
+
+#hyper:hover
+{
+    background:red;
+}
+#wrapper
+{
+   width: 1080px;
+   background-color: white;
+   margin: 0 auto;
+   padding: 10px;
+   border: 5px solid #dedede;
+}
+#banner
+{
+   height: 200px;
+   border: 3px solid #E3E3E3;
+   background-image: url('../../Images/payroll2.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#navigation
+{
+   height: 60px;
+   /*border: 3px solid #E3E3E3;*/
+   margin-top: 20px;
+   background-image: url(../../Images/bblack.JPG);
+   text-shadow: 0.1em 0.1em #333;
+}
+
+#nav
+{
+    list-style: none;
+}
+
+#nav ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: none;
+}
+
+#nav li
+{
+    font-size: 24px;
+    float: left;
+    position: relative;
+    width: 180px;
+    height: 50px;
+}
+
+#nav li ul li
+{
+    background-image: url(../../Images/bblack.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*border: 3px solid #E3E3E3;*/ 
+    padding-left: 10px;
+}
+
+#nav a:link, #nav a:active, #nav a:visited
+{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav a:hover
+{
+    color: lightblue;
+}
+
+#botNav
+{
+   height: 100px;
+   border: 3px solid #E3E3E3;
+   margin-top: 20px;
+   background-image: url('../../Images/bblack.JPG');
+   text-shadow: 0.1em 0.1em #333;
+}
+#footer
+{
+
+}
+.val
+{
+    font-size: 24px;
+    float: left;
+    position: relative;
+    width: 163px;
+    height: 50px;
+    color: white;
+    top: -5px;
+    left: 0px;
+}
+.val ul li
+{
+    font-size: 24px;
+    float: left;
+    position: relative;
+    width: 163px;
+    height: 50px;
+    color: white;
+    top: -5px;
+    left: 0px;
+}
+#h3
+{
+    font-size: 24px;
+    float: left;
+    position: relative;
+    width: 163px;
+    height: 50px;
+    color: white;
+    top: -5px;
+    left: 0px;
+}
+
+#bottom
+{
+    font-size: medium;
+    color: white;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    top: 12px;
+    left: -3px;
+    height: 19px;
+}
+.nn
+{
+    font-size: medium;
+    color: darkblue;
+    font-weight:600;
+}
+video { 
+
+}
+.stopfade { 
+   opacity: .5;
+}
